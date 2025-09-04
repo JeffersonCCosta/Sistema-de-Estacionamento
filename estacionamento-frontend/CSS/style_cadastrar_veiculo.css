@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: "Montserrat", sans-serif;
+    color: #F6F6F6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../Imagens/fundo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.titulo_cadastro{
+    font-size: 40px;
+    font-family: "Krona One", sans-serif;
+    background-color: #2c2c2c;
+}
+
+.titulo_tabela{
+    font-size: 30px;
+    font-family: "Krona One", sans-serif;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-bottom: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+select {
+    margin-right: 10px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #585757;
+}
+
+input {
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 16px;
+    background-color: #494e4f;
+    color: #F6F6F6;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #2c2c2c;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 900px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #F6F6F6;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #F6F6F6;
+    text-align: center;
+}
+
+th {
+    background-color: #494e4f;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+td {
+    font-family: "Montserrat", sans-serif;
+}
+
+.botoes_paginas{
+    display: flex;
+    padding-top: 60px;
+}
+
+.botoes_opcoes_paginas{
+    text-decoration: none;
+    background-color: #494e4f;
+    font-family: "Montserrat One", sans-serif;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 15px 0;
+    width: 150px;
+    text-align: center;
+    color: black;
+    font-weight: 550;
+    margin-bottom: 20px;
+}
+.botoes_opcoes_paginas:hover {
+    color: #F6F6F6;
+    background-color: #2c2c2c;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#botao_entrada:hover {
+    color: #F6F6F6;
+    background-color: #64b166;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.mensagem {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  display: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  transition: opacity 0.5s;
+}
+.mensagem.erro {
+  background-color: #f44336;
+}
+
+#entrada-container{
+    display: none; margin-top: 20px;
+}

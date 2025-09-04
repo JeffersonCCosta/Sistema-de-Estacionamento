@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cadastro de Veículos</title>
+  <link rel="stylesheet" href="../CSS/style_cadastrar_veiculo.css">
+</head>
+<body>
+  <h1 class="titulo_cadastro">Cadastro de Veículos</h1>
+
+  <form id="form-veiculo">
+    <input type="text" id="placa" placeholder="Placa" required />
+    <!--<input type="text" id="modelo" placeholder="Modelo" required />-->
+      <select name="Modelo" id="modelo" required>
+        <option value="Modelo">Selecione o Modelo</option>
+        <option value="Fiat Uno">Fiat Uno</option>
+        <option value="Chevrolet Onix">Chevrolet Onix</option>
+        <option value="Volkswagen Gol">Volkswagen Gol</option>
+        <option value="Ford Ka">Ford Ka</option>
+        <option value="Toyota Corolla">Toyota Corolla</option>
+        <option value="Honda Civic">Honda Civic</option>
+        <option value="Jeep Compass">Jeep Compass</option>
+        <option value="Renault Kwid">Renault Kwid</option>
+        <option value="Hyundai HB20">Hyundai HB20</option>
+        <option value="Nissan Kicks">Nissan Kicks</option>
+        <option value="Chevrolet Tracker">Chevrolet Tracker</option>
+        <option value="Volkswagen Polo">Volkswagen Polo</option>
+        <option value="Fiat Cronos">Fiat Cronos</option>
+        <option value="Toyota Hilux">Toyota Hilux</option>
+        <option value="Mitsubishi Lancer">Mitsubishi Lancer</option>
+      </select>
+    <!--<input type="text" id="cor" placeholder="Cor" required />-->
+    <select name="Cor" id="cor" placeholder>
+      <option value="Cor">Selecione a Cor</option>
+      <option value="Preto">Preto</option>
+      <option value="Branco">Branco</option>
+      <option value="Prata">Prata</option>
+      <option value="Vermelho">Vermelho</option>
+      <option value="Azul">Azul</option>
+      <option value="Cinza">Cinza</option>
+      <option value="Verde">Verde</option>
+      <option value="Amarelo">Amarelo</option>
+      <option value="Azul Claro">Azul Claro</option>
+      <option value="Branco Pérola">Branco Pérola</option>
+      <option value="Preto Fosco">Preto Fosco</option>
+      <option value="Laranja">Laranja</option>
+      <option value="Cinza Chumbo">Cinza Chumbo</option>
+      <option value="Vermelho Rubi">Vermelho Rubi</option>
+      <option value="Azul Metálico">Azul Metálico</option>
+    </select>
+    <button type="submit">Cadastrar</button>
+  </form>
+
+  <h2 class="titulo_tabela">Veículo Cadastrado</h2>
+  <table id="tabela-veiculos">
+    <thead>
+      <tr>
+        <th>Placa</th>
+        <th>Modelo</th>
+        <th>Cor</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <div class="botoes_paginas">
+    <a id="botao_entrada" class="botoes_opcoes_paginas">Dar Entrada</a>
+  </div>
+  
+  <div id="entrada-container">
+  <h2 class="titulo_tabela">Entrada Finzalizada</h2>
+    <table id="tabela-entradas">
+      <thead>
+        <tr>
+          <th>Carro</th>
+          <th>Entrada</th>
+          </tr>
+        </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <div class="botoes_paginas">
+    <a class="botoes_opcoes_paginas" href="index.html">Menu</a>
+  </div>
+
+  <div id="mensagem" class="mensagem"></div>
+
+  <script src="../JS/script_cadastrar_veiculo.js"></script>
+</body>
+</html>
