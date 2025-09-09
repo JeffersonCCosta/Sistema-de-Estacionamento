@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acesso Estacionamento</title>
+    <link rel="stylesheet" href="../CSS/style-login.css">
+</head>
+<body>
+
+    <div class="container">
+        <form action="#">
+            <img class="logo-container" src="../IMG/Logo.png" alt="">
+
+            <div class="input-container">
+                <input id="email" placeholder="E-mail" type="email" required>
+                <img class="incone" width="20" height="20" src="https://img.icons8.com/ios/20/FFFFFF/user--v1.png" alt="user--v1"/>
+            </div>
+
+            <div class="input-container">
+                <input id="senha" placeholder="Senha" type="password" required>
+                <img class="incone" width="20" height="20" src="https://img.icons8.com/ios/20/FFFFFF/lock--v1.png" alt="lock--v1"/>
+                <a class="esqueceu-senha" href="#">Esqueceu a senha?</a>
+            </div>
+
+            <button class="entrar-container" type="submit">Entrar</button>
+
+            <div class="registrar-container">
+                <p>Não tem uma conta? <a href="#" id="link-cadastro">Cadastre-se</a></p>
+                <p id="msg-cadastro"></p>
+            </div>
+        </form>
+    </div>
+
+    <footer id="footer-login">
+      <p>Trabalho - Projeto de Desenvolvimento de Software</p>
+    </footer>
+    
+    <script src="../JS/script-login.js"></script>
+</body>
+</html>

@@ -14,7 +14,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url(../Imagens/fundo.jpg);
+    background-image: url(../IMG/fundo.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -23,6 +23,9 @@ body {
 .titulo_principal {
     font-size: 40px;
     font-family: "Krona One", sans-serif;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+    border-radius: 10px;
 }
 
 .botoes_principal{
@@ -50,3 +53,49 @@ body {
     cursor: pointer;
     transition: 0.5s;
 }
+
+
+#footer-login {
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #222;
+  color: white;
+  padding: 10px 20px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+#header-login {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #222;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  z-index: 9999;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+#header-login button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+#header-login button:hover {
+  background-color: #d32f2f;
+}
+

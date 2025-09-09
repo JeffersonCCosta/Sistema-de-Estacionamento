@@ -1,31 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="\CSS\style_index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/style_index.css" />
     <title>Tela Inicial</title>
-</head>
-<body>
-    <header>
-
+  </head>
+  <body>
+    <header id="header-login">
+      <span id="usuario-logado">Usuário: <strong></strong></span>
+      <button id="btn-logout">Sair</button>
     </header>
-    
+
     <main class="apresentacao">
+      <h1 class="titulo_principal">Sistema de Estacionamento</h1>
 
-        <h1 class="titulo_principal">Sistema de Estacionamento</h1>
-
-        <div class="botoes_principal">
-            <a class="botoes_opcoes_principal" href="cadastrar_veiculos.html">Cadastro</a>
-            <a class="botoes_opcoes_principal" href="entrada_veiculos.html">Entrada</a>
-            <a class="botoes_opcoes_principal" href="saida_veiculos.html">Saída</a>
-            <a class="botoes_opcoes_principal" href="buscar_veiculos.html">Consultar</a>
-        </div>
-
+      <div class="botoes_principal">
+        <a class="botoes_opcoes_principal" href="cadastrar_veiculos.html"
+          >Cadastro</a
+        >
+        <a class="botoes_opcoes_principal" href="entrada_veiculos.html"
+          >Entrada</a
+        >
+        <a class="botoes_opcoes_principal" href="saida_veiculos.html">Saída</a>
+        <a class="botoes_opcoes_principal" href="buscar_veiculos.html"
+          >Consultar</a
+        >
+      </div>
     </main>
 
-    <footer>
-        
+    <footer id="footer-login">
+      <p>Trabalho - Projeto de Desenvolvimento de Software</p>
     </footer>
-</body>
+
+    <script src="../JS/script_index.js"></script>
+  </body>
 </html>

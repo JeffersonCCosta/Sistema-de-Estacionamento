@@ -33,6 +33,23 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 */
+const usuario = JSON.parse(localStorage.getItem("usuario"));
+const usuarioDiv = document.getElementById("usuario-logado");
+const btnLogout = document.getElementById("btn-logout");
+
+if (usuarioDiv) {
+    usuarioDiv.innerHTML = usuario && usuario.nome ? 
+        `Usuário: <strong>${usuario.nome}</strong>` :
+        `Usuário: <strong>Visitante</strong>`;
+}
+
+if (btnLogout) {
+    btnLogout.addEventListener("click", () => {
+        localStorage.removeItem("usuario");
+        window.location.href = "../Login/HTML/login.html";
+    });
+}
+
 
 document.addEventListener("DOMContentLoaded", () => {
   const tabela = document.querySelector("#tabela-veiculos tbody");

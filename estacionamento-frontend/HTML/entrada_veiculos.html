@@ -2,10 +2,15 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <title>Busca de Veículos</title>
+  <title>Entrada de Veículos</title>
   <link rel="stylesheet" href="../CSS/style_entrada_veiculos.css" />
 </head>
 <body>
+
+  <header id="header-login">
+      <span id="usuario-logado">Usuário: <strong></strong></span>
+      <button id="btn-logout">Sair</button>
+    </header>
 
 <!-- <h1 class="titulo_busca">Busca de Veículos</h1> -->
 
@@ -17,8 +22,6 @@
         <th>Modelo</th>
         <th>Cor</th>
         <th>Entrada</th>
-        <th>Saída</th>
-
       </tr>
     </thead>
     <tbody></tbody>
@@ -27,6 +30,12 @@
   <div class="botoes_paginas">
     <a class="botoes_opcoes_paginas" href="index.html">Menu</a>
   </div>
+  
+  <div id="mensagem" class="mensagem"></div>
+
+  <footer id="footer-login">
+      <p>Trabalho - Projeto de Desenvolvimento de Software</p>
+    </footer>
 
   <script src="../JS/script_entrada_veiculos.js"></script>
 </body>

@@ -4,7 +4,27 @@ const botaoEntrada = document.getElementById('botao_entrada');
 const entradaContainer = document.getElementById('entrada-container');
 const tabelaEntradas = document.querySelector('#tabela-entradas tbody');
 
+
+
 const API_URL = 'http://localhost:8080/veiculos';
+
+const usuario = JSON.parse(localStorage.getItem("usuario"));
+const usuarioDiv = document.getElementById("usuario-logado");
+const btnLogout = document.getElementById("btn-logout");
+
+if (usuarioDiv) {
+    usuarioDiv.innerHTML = usuario && usuario.nome ? 
+        `Usuário: <strong>${usuario.nome}</strong>` :
+        `Usuário: <strong>Visitante</strong>`;
+}
+
+if (btnLogout) {
+    btnLogout.addEventListener("click", () => {
+        localStorage.removeItem("usuario");
+        window.location.href = "../Login/HTML/login.html";
+    });
+}
+
 
 //Função para mostrar mensagem na tela (Adicionado ou erro)
 function mostrarMensagem(texto, tipo = "sucesso") {
@@ -52,6 +72,8 @@ form.addEventListener('submit', async (e) => {
         </tr>`;
       tabelaBody.innerHTML = linha;
 
+    } else if (response.status === 500) {
+      mostrarMensagem('Erro: já existe um veículo com essa placa no sistema.', 'erro');
     } else {
       mostrarMensagem('Erro ao cadastrar veículo.', 'erro');
     }
