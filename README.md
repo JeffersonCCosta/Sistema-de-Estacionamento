@@ -53,5 +53,4 @@ O **Estacione+ GARAGE** traz agilidade ao processo e fornece uma base para futur
 - [Requisitos](https://github.com/JeffersonCCosta/Sistema-de-Estacionamento/wiki/Requisitos)
 - [Gestão do Projeto](https://github.com/JeffersonCCosta/Sistema-de-Estacionamento/wiki/Gest%C3%A3o-do-Projeto)
 - [Análise e Projeto do Software](https://github.com/JeffersonCCosta/Sistema-de-Estacionamento/wiki/An%C3%A1lise-e-Projeto-do-Software)
-- [Guia de Instalação]()
 - [Conclusão](https://github.com/JeffersonCCosta/Sistema-de-Estacionamento/wiki/Conclus%C3%A3o)
