@@ -1,0 +1,73 @@
+digraph DiagramaClasses {
+	rankdir=TB size=8
+	Usuario [label="Usuario
+--------------------
+- id: Long
+- nome: String
+- email: String
+- senha: String
+--------------------
++ getId()
++ getNome()
++ getEmail()
++ getSenha()
+" shape=record]
+	Veiculo [label="Veiculo
+--------------------
+- id: Long
+- placa: String
+- modelo: String
+- cor: String
+- entrada: LocalDateTime
+- saida: LocalDateTime
+--------------------
++ getPlaca()
++ getModelo()
++ getCor()
++ getEntrada()
++ getSaida()
+" shape=record]
+	VeiculoEntradaDTO [label="VeiculoEntradaDTO
+--------------------
+- placa: String
+- entrada: LocalDateTime
+" shape=record]
+	VeiculoSaidaDTO [label="VeiculoSaidaDTO
+--------------------
+- placa: String
+- saida: LocalDateTime
+" shape=record]
+	UsuarioRepository [label="UsuarioRepository
+--------------------
++ findByEmail(email)
++ findByEmailAndSenha(email, senha)
+" shape=record]
+	VeiculoRepository [label="VeiculoRepository
+--------------------
++ findByPlaca(placa)
++ findByEntradaIsNull()
++ findBySaidaIsNull()
+" shape=record]
+	UsuarioService [label="UsuarioService
+--------------------
++ authenticateAndGet(email, senha)
+" shape=record]
+	AuthController [label="AuthController
+--------------------
++ login(usuario)
+" shape=record]
+	VeiculoController [label="VeiculoController
+--------------------
++ cadastrar(veiculo)
++ listar()
++ registrarEntrada(entradaDTO)
++ registrarSaida(saidaDTO)
+" shape=record]
+	UsuarioRepository -> Usuario [label=manages]
+	UsuarioService -> UsuarioRepository [label=uses]
+	AuthController -> UsuarioService [label=calls]
+	VeiculoRepository -> Veiculo [label=manages]
+	VeiculoController -> VeiculoRepository [label=uses]
+	VeiculoEntradaDTO -> VeiculoController [label=input]
+	VeiculoSaidaDTO -> VeiculoController [label=input]
+}
