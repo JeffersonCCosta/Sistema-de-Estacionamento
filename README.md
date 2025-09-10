@@ -50,7 +50,7 @@ O **Estacione+ GARAGE** traz agilidade ao processo e fornece uma base para futur
 ---
 
 ## 📚 Sumário
-- [[Requisitos]]
+- [Requisitos](https://github.com/JeffersonCCosta/Sistema-de-Estacionamento/wiki/An%C3%A1lise-e-Projeto-do-Software)
 - [[Gestão do Projeto]]
 - [[Análise e Projeto do Software]]
 - [[API – Endpoints]]
